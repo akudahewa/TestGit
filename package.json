@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "node server",
-    "test": "jenkins-mocha --cobertura server/services/* server/aspects/* "
+    "test": "jenkins-mocha --cobertura products.js "
   },
   "dependencies": {
     
