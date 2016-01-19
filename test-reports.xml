@@ -1,0 +1,48 @@
+
+[0m[0m
+TAP version 13
+# Test API health
+not ok 1 call to health route produced error: Error: Invalid protocol: exchange.local.pearson.com:
+  ---
+    operator: fail
+    at: Request._callback (/home/amila/workspace/pearson/branchs/features/exchange/www-prototype/server/test/smoke/tests.js:12:9)
+  ...
+[31m  1) Uncaught error outside test suite[0m
+[0m  Circuit breaker helpers[0m
+[0m    wrapAsync(context, fn, fallback, options)[0m
+[0m      wrapper[0m
+      [32m  ✓[0m[90m should throw if 0 arguments[0m
+      [32m  ✓[0m[90m should throw if last argument is not a function[0m
+      [32m  ✓[0m[90m should call the wrapped callback[0m
+      [32m  ✓[0m[90m should call the wrapped callback with an error when the circuit breaker is open[0m
+
+
+[92m [0m[32m 4 passing[0m[90m (50ms)[0m
+[31m  1 failing[0m
+
+[0m  1)  Uncaught error outside test suite:
+[0m[31m     Uncaught TypeError: Cannot read property 'statusCode' of undefined[0m[90m
+      at Request._callback (server/test/smoke/tests.js:14:17)
+      at self.callback (node_modules/request/request.js:198:22)
+      at Request.init (node_modules/request/request.js:471:17)
+      at new Request (node_modules/request/request.js:140:8)
+      at request (node_modules/request/index.js:55:10)
+      at Test.request.uri (server/test/smoke/tests.js:6:3)
+      at Test.bound [as _cb] (node_modules/tape/lib/test.js:62:32)
+      at Test.run (node_modules/tape/lib/test.js:75:10)
+      at Test.bound [as run] (node_modules/tape/lib/test.js:62:32)
+      at Object.next [as _onImmediate] (node_modules/tape/lib/results.js:66:15)
+[0m
+
+
+=============================================================================
+Writing coverage object [/home/amila/workspace/pearson/branchs/features/exchange/www-prototype/artifacts/coverage/coverage.json]
+Writing coverage reports at [/home/amila/workspace/pearson/branchs/features/exchange/www-prototype/artifacts/coverage]
+=============================================================================
+
+=============================== Coverage summary ===============================
+Statements   : 96.67% ( 29/30 )
+Branches     : 80% ( 8/10 )
+Functions    : 100% ( 4/4 )
+Lines        : 100% ( 26/26 )
+================================================================================
