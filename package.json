@@ -9,35 +9,7 @@
     "test": "jenkins-mocha --cobertura server/services/* server/aspects/* "
   },
   "dependencies": {
-    "async": "^0.9.0",
-    "boom": "^2.6.1",
-    "catbox": "^4.2.2",
-    "catbox-memory": "^1.1.1",
-    "cli-color": "^0.3.2",
-    "cli-table": "^0.3.1",
-    "convict": "^0.6.1",
-    "good": "^5.1.1",
-    "good-console": "^4.1.0",
-    "good-file": "^4.0.2",
-    "googleapis": "^2.1.6",
-    "hapi": "^8.3.0",
-    "hapi-auth-bearer-token": "^3.1.0",
-    "hapi-swaggered": "2.4.0",
-    "hapi-swaggered-ui": "^1.2.0",
-    "hoek": "^2.11.0",
-    "joi": "6.9.1",
-    "js-yaml": "^3.2.7",
-    "lunr": "^0.5.4",
-    "nconf": "0.8.1",
-    "prsn.circuit-breaker": "0.0.1",
-    "prsn.pi-token-validator": "git+ssh://git@devops-tools.pearson.com/gsr/prsn.pi-token-validator.git#pureNodeJsAesCmac",
-    "eclg-prospero": "git+ssh://git@devops-tools.pearson.com/eisp/subpub-node.git#v2.3.2",
-    "resourcery": "git://github.com/aarmour/resourcery.git#v0.0.4",
-    "sort-by": "git://github.com/staygrimm/sort-by.git#3aae2c723a1f89785224635e182a0539c4f273cd",
-    "underscore": "^1.8.3",
-    "memcached": "2.2.0",
-    "bluebird": "3.0.5",
-    "dateformat": "1.0.12"
+    
   },
   "devDependencies": {
     "connect-modrewrite": "^0.7.6",
@@ -95,6 +67,7 @@
     "grunt-contrib-csslint": "*",
     "grunt-parallel-behat": "*",
     "mocha": "~2.3.4",
-    "istanbul": "~0.4.2"
+    "istanbul": "~0.4.2",
+ "jenkins-mocha": "latest"
   }
 }
